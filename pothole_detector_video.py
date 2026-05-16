@@ -3,11 +3,10 @@ import math
 import cvzone
 from ultralytics import YOLO
 
-# Initialize video capture
+
 video_path = "Media/Potholes.mp4"
 cap = cv2.VideoCapture(video_path)
 
-# Load YOLO model with custom weights
 model = YOLO("Weights/best.pt")
 
 # Define class names
